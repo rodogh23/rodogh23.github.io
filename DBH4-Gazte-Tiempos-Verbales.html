@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>
+Tiempos Verbales Indicativo - Subjuntivo - Imperativo
+	</title>
+</HEAD>
+
+<script LANGUAGE="JavaScript">
+
+   function Random () 
+   {
+		var array1=[
+			"",
+			"como","van","piensan","hacemos","bailais",
+			  "comían","bailabais","freías","dormía","rezaba",
+			  "hizo","mataron","reiste","bailamos","trajeron",
+			  "habéis pensado","han reído","ha dormido","has traído","habéis llevado",
+			  "había copiado","habíais empezado","habían visto","habíamos pensado","habías introducido",
+			  "hube mirado","hubo empezado","hubistes cantado","hubieron impreso","hubieron planchado",
+			"miraré","irá","vendremos","cocinarás","reiréis",
+			"habré marchado","habrá comido","habremos encendido","habrán subido","habréis vendido",
+			"compraría","venderíamos","marcharían","invitaríais","aprobarías",
+			"habría leído","habríais escrito","habrían cantado","habráis visto","habrías mirado",
+			  "venga","coma","ría","baile","canten",
+			  "cocinaras","bailases","rieran","trajerais","hiciesen",
+			  "haya venido","hayáis comido","hayan pensado","hayamos escrito","hayas copiado",
+			  "hubiera planchado","hubiese roto","hubiérais cogido","hubieran pintado","hubieras copiado",
+			""
+			];
+		var array2=[
+			"",
+			"Presente","Presente","Presente","Presente","Presente",
+			  "Pretérito Imperfecto","Pretérito Imperfecto","Pretérito Imperfecto","Pretérito Imperfecto","Pretérito Imperfecto",
+			  "Pretérito Perfecto Simple","Pretérito Perfecto Simple","Pretérito Perfecto Simple","Pretérito Perfecto Simple","Pretérito Perfecto Simple",
+			  "Pretérito Perfecto Compuesto","Pretérito Perfecto Compuesto","Pretérito Perfecto Compuesto","Pretérito Perfecto Compuesto","Pretérito Perfecto Compuesto",
+			  "Pretérito Pluscuamperfecto","Pretérito Pluscuamperfecto","Pretérito Pluscuamperfecto","Pretérito Pluscuamperfecto","Pretérito Pluscuamperfecto",
+			  "Pretérito Anterior","Pretérito Anterior","Pretérito Anterior","Pretérito Anterior","Pretérito Anterior",
+			"Futuro Simple","Futuro Simple","Futuro Simple","Futuro Simple","Futuro Simple",
+			"Futuro Compuesto","Futuro Compuesto","Futuro Compuesto","Futuro Compuesto","Futuro Compuesto",
+			"Condicional Simple","Condicional Simple","Condicional Simple","Condicional Simple","Condicional Simple",
+			"Condicional Compuesto","Condicional Compuesto","Condicional Compuesto","Condicional Compuesto","Condicional Compuesto",
+			  "SUBJUNTIVO - Presente","SUBJUNTIVO - Presente","SUBJUNTIVO - Presente","SUBJUNTIVO - Presente","SUBJUNTIVO - Presente",
+			  "SUBJUNTIVO - Pretérito Imperfecto","SUBJUNTIVO - Pretérito Imperfecto","SUBJUNTIVO - Pretérito Imperfecto","SUBJUNTIVO - Pretérito Imperfecto","SUBJUNTIVO - Pretérito Imperfecto",
+			  "SUBJUNTIVO - Pretérito Perfecto Compuesto","SUBJUNTIVO - Pretérito Perfecto Compuesto","SUBJUNTIVO - Pretérito Perfecto Compuesto","SUBJUNTIVO - Pretérito Perfecto Compuesto","SUBJUNTIVO - Pretérito Perfecto Compuesto",
+			  "SUBJUNTIVO - Pretérito Pluscuamperfecto","SUBJUNTIVO - Pretérito Pluscuamperfecto","SUBJUNTIVO - Pretérito Pluscuamperfecto","SUBJUNTIVO - Pretérito Pluscuamperfecto","SUBJUNTIVO - Pretérito Pluscuamperfecto",
+			""
+			];
+
+		if ((object1.innerHTML == "") || ((object1.innerHTML != "") && (object2.innerHTML != "")))
+		{
+			// Esta vacio el romano, busco uno
+			// Numero aleatorio entero entre 0 y el numero de arrays
+			var random=Math.floor((Math.random()*array1.length));
+			//alert (random);
+			object1.innerHTML = array1[random];
+			object2.innerHTML = "";
+		} else
+		{
+			// No esta vacio el romano. Pongo el decimal asociado
+			object2.innerHTML = array2[array1.indexOf(object1.innerHTML,1)]; 
+		}
+   }
+
+ 
+//--> 
+</script> 
+ 
+ 
+<BODY> 
+ 
+<H1> 
+Di el tiempo verbal
+</H1> 
+ 
+<TABLE> 
+    <TR> 
+        <TD> 
+		<form action=javascript:Random() name=formulario> 
+		<input type=submit value="Random" name=button> 
+		<font size="55">
+		<br>
+		<tt><div id="object1" style="position:absolute; visibility:show font-family:courier"></div></tt>
+		<br>
+		<tt><div id="object2" style="position:absolute; visibility:show font-family:courier"></div></tt>
+		</font>
+		</form> 
+        </TD> 
+    </TR> 
+</TABLE> 
+ 
+  
+</BODY> 
+ 
+</HTML> 

@@ -1,0 +1,33 @@
+.crenalme {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+.resalta {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #537189;
+	font-style: normal;
+	font-weight: bold;
+}
+.boton {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #537189;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+}
+.boton:HOVER {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+.boton:ACTIVE {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
